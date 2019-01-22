@@ -1,0 +1,62 @@
+﻿<section class="sidebar">
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel">
+        <div class="pull-left image">
+            <img src="/Resource/img/avatar.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+            <p>@ViewBag.uname</p>
+            <!-- Status -->
+            <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+        </div>
+    </div>
+    <!-- search form (Optional) -->
+    <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </form>
+    <!-- /.search form -->
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">导航</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="@Url.Action("Index","AdminHome")"><i class="fa fa-home"></i> <span>首页</span></a></li>
+        <li><a href="@Url.Action("Index","Jigou")"><i class="fa fa-group"></i> <span>机构管理</span></a></li>
+        <li><a href="@Url.Action("Index","JgVideo")"><i class="fa fa-video-camera"></i> <span>机构视频管理</span></a></li>
+        <li><a href="@Url.Action("Index","Notice")"><i class="fa fa-list"></i> <span>文章管理</span></a></li>
+        <li><a href="@Url.Action("Index", "WebAd")"><i class="fa fa-adn"></i> <span>广告管理</span></a></li>
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-cog"></i> <span>微信功能</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="@Url.Action("CreateWechatMenu","WechatMenu")">微信菜单</a></li>
+                <li><a href="@Url.Action("Index","AdminSysUser")">微信素材</a></li>
+                <li><a href="@Url.Action("Index","AdminSysUser")">模板消息</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-cog"></i> <span>系统管理</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="@Url.Action("Index","AdminSetting")">网站设置</a></li>
+                <li><a href="@Url.Action("Index","AdminSysUser")">管理员设置</a></li>
+                <li><a href="@Url.Action("Index","Category")">分类设置</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- /.sidebar-menu -->
+</section>

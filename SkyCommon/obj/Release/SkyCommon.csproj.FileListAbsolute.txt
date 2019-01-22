@@ -1,0 +1,8 @@
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Release\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Release\SkyCommon.pdb
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Release\ChnCharInfo.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Release\ThoughtWorks.QRCode.dll
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Release\SkyCommon.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Release\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Release\SkyCommon.pdb

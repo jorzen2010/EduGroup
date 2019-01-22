@@ -1,0 +1,16 @@
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyService.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyService.pdb
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyDal.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\EntityFramework.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\ChnCharInfo.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\ThoughtWorks.QRCode.dll
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyDal.pdb
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyEntity.pdb
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\EntityFramework.xml
+D:\MyPro\2018\EduGroup\SkyService\bin\Release\SkyCommon.pdb
+D:\MyPro\2018\EduGroup\SkyService\obj\Release\SkyService.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyService\obj\Release\SkyService.dll
+D:\MyPro\2018\EduGroup\SkyService\obj\Release\SkyService.pdb

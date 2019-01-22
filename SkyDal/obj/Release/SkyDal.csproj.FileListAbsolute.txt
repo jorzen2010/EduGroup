@@ -1,0 +1,17 @@
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyDal.dll.config
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyDal.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyDal.pdb
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\EntityFramework.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\EntityFramework.SqlServer.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\Microsoft.ApplicationBlocks.Data.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\ChnCharInfo.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\ThoughtWorks.QRCode.dll
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyCommon.pdb
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\SkyEntity.pdb
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\EntityFramework.xml
+D:\MyPro\2018\EduGroup\SkyDal\bin\Release\EntityFramework.SqlServer.xml
+D:\MyPro\2018\EduGroup\SkyDal\obj\Release\SkyDal.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyDal\obj\Release\SkyDal.dll
+D:\MyPro\2018\EduGroup\SkyDal\obj\Release\SkyDal.pdb

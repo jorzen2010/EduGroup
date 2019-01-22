@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduGroup", "EduGroup\EduGroup.csproj", "{5EDC3C8D-ED00-42AC-B2E1-3A325B2CB488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyEntity", "SkyEntity\SkyEntity.csproj", "{F563B21A-546B-4EC1-940F-45352B7320EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyService", "SkyService\SkyService.csproj", "{CD180DC6-BFB8-42B5-932E-C8FDA98D1BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyDal", "SkyDal\SkyDal.csproj", "{FFF4400D-CF5A-4F28-9734-E740F4283DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyCommon", "SkyCommon\SkyCommon.csproj", "{F2175DA4-E145-4D76-A1F1-4FBF5BF900F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyWechat", "SkyWechatService\SkyWechat.csproj", "{819A09D8-21E2-47B4-91FC-10B1A780FA6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EDC3C8D-ED00-42AC-B2E1-3A325B2CB488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDC3C8D-ED00-42AC-B2E1-3A325B2CB488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDC3C8D-ED00-42AC-B2E1-3A325B2CB488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDC3C8D-ED00-42AC-B2E1-3A325B2CB488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F563B21A-546B-4EC1-940F-45352B7320EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F563B21A-546B-4EC1-940F-45352B7320EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F563B21A-546B-4EC1-940F-45352B7320EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F563B21A-546B-4EC1-940F-45352B7320EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD180DC6-BFB8-42B5-932E-C8FDA98D1BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD180DC6-BFB8-42B5-932E-C8FDA98D1BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD180DC6-BFB8-42B5-932E-C8FDA98D1BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD180DC6-BFB8-42B5-932E-C8FDA98D1BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF4400D-CF5A-4F28-9734-E740F4283DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF4400D-CF5A-4F28-9734-E740F4283DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF4400D-CF5A-4F28-9734-E740F4283DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF4400D-CF5A-4F28-9734-E740F4283DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2175DA4-E145-4D76-A1F1-4FBF5BF900F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2175DA4-E145-4D76-A1F1-4FBF5BF900F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2175DA4-E145-4D76-A1F1-4FBF5BF900F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2175DA4-E145-4D76-A1F1-4FBF5BF900F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819A09D8-21E2-47B4-91FC-10B1A780FA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819A09D8-21E2-47B4-91FC-10B1A780FA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819A09D8-21E2-47B4-91FC-10B1A780FA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819A09D8-21E2-47B4-91FC-10B1A780FA6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

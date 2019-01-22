@@ -1,0 +1,79 @@
+﻿@model StaticPagedList<SkyEntity.Jigou>
+@using PagedList;
+@using PagedList.Mvc;
+@using SkyService;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pull to refresh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="~/plugins/pullToRefresh/pullToRefresh.css" />
+    <script src="~/plugins/pullToRefresh/iscroll.js"></script>
+    <script src="~/plugins/pullToRefresh/pullToRefresh.js"></script>
+    <style type="text/css" media="all">
+        body, html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--must content ul-->
+    第 @ViewBag.pageno 页
+    <div id="wrapper">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@Html.DisplayFor(modelItem => item.JigouName)</li>
+            }
+
+        </ul>
+        @Html.AntiForgeryToken()
+    </div>
+
+    <script>
+        refresher.init({
+            id: "wrapper",
+            pullDownAction: Refresh,
+            pullUpAction: Load
+        });
+
+        var generatedCount = 0;
+        function Refresh() {
+            setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+                var el, li, i;
+                el = document.querySelector("#wrapper ul");
+                el.innerHTML = '';
+                for (i = 0; i < 11; i++) {
+                    li = document.createElement('li');
+                    li.appendChild(document.createTextNode('async row ' + (++generatedCount)));
+                    el.insertBefore(li, el.childNodes[0]);
+                }
+                myScroll.refresh();/****remember to refresh when you action was completed！！！****/
+            }, 1000);
+        }
+
+        function Load() {
+            setTimeout(function () {// <-- Simulate network congestion, remove setTimeout from production!
+                var el, li, i;
+                el = document.querySelector("#wrapper ul");
+                for (i = 0; i < 2; i++) {
+                    li = document.createElement('li');
+                    li.appendChild(document.createTextNode('async row ' + (++generatedCount)));
+                    el.appendChild(li, el.childNodes[0]);
+                }
+                myScroll.refresh();/****remember to refresh when you action was completed！！！****/
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>

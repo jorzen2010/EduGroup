@@ -1,0 +1,78 @@
+﻿@model SkyEntity.JgVideo
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section Topcss {
+   <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.6.0/skins/default/aliplayer-min.css" />
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.title
+        </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">
+                         @ViewBag.title
+                         </h3>
+                      
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <h3 class="text-center">@Model.JgTitle</h3>
+                       
+                            <div class="col-md-offset-2 col-md-9" >
+                                <div class="prism-player" style="height: 500px;" id="J_prismPlayer">
+                                </div>
+                            </div>
+
+                      
+
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <p>
+                           标签： @Model.Tags <br/>
+                           上线时间： @Model.CreateTime
+                        </p>
+                    </div>
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+@section BottomScripts {
+
+    <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.6.0/aliplayer-min.js"></script>
+    <script type="text/javascript">
+   
+    //初始化编辑器
+    var player = new Aliplayer({
+        id: "J_prismPlayer",
+        autoplay: false,
+        width: "850px",
+      //  height: "550px",
+        vid: "@ViewBag.VideoId",
+        playauth: "@ViewBag.PlayAuth",
+    });
+
+  
+
+    </script>
+
+}

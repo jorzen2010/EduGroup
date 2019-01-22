@@ -1,0 +1,170 @@
+﻿@model SkyEntity.Guanggao
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.title = "广告管理";
+}
+@section Topcss {
+    <link href="~/plugins/bootstrap-validator/css/bootstrapValidator.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/iCheck/square/green.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="~/plugins/bootstrap-fileinput/css/fileinput.css" rel="stylesheet" type="text/css" />
+
+
+
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.title
+        </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">
+                            @ViewBag.title
+                        </h3>
+
+                    </div>
+                    <!-- /.box-header -->
+                    @using (Html.BeginForm("Edit", "WebAd", FormMethod.Post, new { @class = "form-horizontal", @name = "Create", @id = "Create" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                          @Html.HiddenFor(model=>model.Id)
+                        <div class="box-body">
+                            <div class="col-md-12">
+
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Category, new { @class = "control-label col-sm-2" })
+                                    <div class="col-sm-9">
+                                        @Html.DropDownListFor(model => model.Category, ViewData["CategoryList"] as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Category)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Title, new { @class = "form-control", @placeholder = "文字广告" })
+                                        @Html.ValidationMessageFor(model => model.Title)
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">机构图片展示</label>
+                                    <div class="col-sm-9">
+                                        <input type="file" name="txt_file" id="txt_file" multiple class="file-loading form-control" />
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">图片地址</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" id="Tupian" name="Tupian" class="form-control" readonly="readonly" value="@Model.Tupian" />
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.AdInfo, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextAreaFor(model => model.AdInfo, new { @class = "form-control", @placeholder = "广告详情" })
+                                        @Html.ValidationMessageFor(model => model.AdInfo)
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.HrefUrl, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.HrefUrl, new { @class = "form-control", @placeholder = "链接地址" })
+                                        @Html.ValidationMessageFor(model => model.HrefUrl)
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Paixu, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.TextBoxFor(model => model.Paixu, new { @class = "form-control", @Value = "0" })
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Shangxian, new { @class = "control-label col-md-2" })
+                                    <div class="col-sm-9">
+                                        @Html.CheckBoxFor(model => model.Shangxian, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Shangxian)
+                                    </div>
+                                </div>
+
+                                @Html.HiddenFor(model => model.CreateTime, new { @Value = DateTime.Now })
+                            </div>
+
+
+                        </div>
+
+                    <!-- /.box-body -->
+                        <div class="box-footer clearfix">
+
+                            <button type="submit" class="btn btn-primary pull-right">保存并发布</button>
+                        </div>
+
+                    }
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+
+@section BottomScripts {
+    <script type="text/javascript" src="~/plugins/bootbox.min.js"></script>
+    <script type="text/javascript" src="~/plugins/iCheck/icheck.js"></script>
+    <script type="text/javascript" src="~/plugins/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="~/plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script type="text/javascript" src="~/plugins/bootstrap-fileinput/js/locales/zh.js"></script>
+    <script type="text/javascript" src="~/Resource/js/SkyWeb.js"></script>
+    <script type="text/javascript" src="~/Resource/js/SkyfileCopper.js"></script>
+    <script type="text/javascript" src="~/Resource/js/SkyInit.js"></script>
+    <script type="text/javascript">
+
+
+        //初始化上传控件的样式
+        $("#txt_file").fileinput({
+            language: 'zh', //设置语言
+            uploadUrl: '/File/Upload?rootpath=Guanggao&folder=tupianji', //上传的地址
+            allowedFileExtensions: ['jpg', 'gif', 'png', 'doc', 'xls', 'ppt', 'pdf', 'docx', 'xlsx', 'pptx'],//接收的文件后缀
+            showUpload: true, //是否显示上传按钮
+            showCaption: false,//是否显示标题
+            browseClass: "btn btn-primary", //按钮样式
+            //dropZoneEnabled: false,//是否显示拖拽区域
+            //minImageWidth: 50, //图片的最小宽度
+            //minImageHeight: 50,//图片的最小高度
+            //maxImageWidth: 1000,//图片的最大宽度
+            //maxImageHeight: 1000,//图片的最大高度
+            //maxFileSize: 0,//单位为kb，如果为0表示不限制文件大小
+            //minFileCount: 0,
+            maxFileCount: 1, //表示允许同时上传的最大文件个数
+            enctype: 'multipart/form-data',
+            validateInitialCount: true,
+            previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        }).on("fileuploaded", function (event, data, previewId, index) {
+            $("#Tupian").val(data.response.MessageUrl);
+        });
+    </script>
+}

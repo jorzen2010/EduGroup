@@ -1,0 +1,5 @@
+D:\MyPro\2018\EduGroup\SkyEntity\bin\Release\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyEntity\bin\Release\SkyEntity.pdb
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Release\SkyEntity.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Release\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Release\SkyEntity.pdb

@@ -1,0 +1,10 @@
+E:\2018\EduGroup\SkyEntity\bin\Debug\SkyEntity.dll
+E:\2018\EduGroup\SkyEntity\bin\Debug\SkyEntity.pdb
+E:\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.csprojResolveAssemblyReference.cache
+E:\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.dll
+E:\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.pdb
+D:\MyPro\2018\EduGroup\SkyEntity\bin\Debug\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyEntity\bin\Debug\SkyEntity.pdb
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.dll
+D:\MyPro\2018\EduGroup\SkyEntity\obj\Debug\SkyEntity.pdb

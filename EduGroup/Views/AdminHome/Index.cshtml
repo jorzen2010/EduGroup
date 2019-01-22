@@ -1,0 +1,134 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.title = "山羊";
+}
+@section Topcss {
+    <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+<link href="~/plugins/bootstrap-switch/css/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+
+
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.title
+        </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">
+                            @ViewBag.title 管理系统<small>&nbsp;&nbsp;&nbsp;&nbsp;最好用的.NET后台管理系统</small>
+                        </h3>
+                        
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body text-center">
+                        @*<div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">机构数量</span>
+                                        <span class="info-box-number">100</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Likes</span>
+                                        <span class="info-box-number">41,410</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <!-- fix for small devices only -->
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Sales</span>
+                                        <span class="info-box-number">760</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">New Members</span>
+                                        <span class="info-box-number">2,000</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                        </div>*@
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1>@ViewBag.title 管理系统</h1>
+                                
+                                <span>
+                                    基于AdminLTE的企业应用开发平台，封装和集成多种组件，提供前端、后端整体解决方案，使得WEB开发更简单!
+                                </span>
+                              
+                               
+                            </div>
+                            <div class="col-xs-12" style="margin:20px 0px 20px 0px">
+                                <a class="btn btn-primary" href="@Url.Action("Index","Jigou")"><i class="fa fa-bank"></i> 机构管理</a>
+                                <a class="btn btn-info" href="@Url.Action("Index","Notice")"><i class="fa fa-book"></i> 文章管理</a>
+                                <a class="btn btn-danger" href="@Url.Action("Index", "JgVideo")"><i class="fa fa-video-camera"></i> 视频管理</a>
+                                <a class="btn btn-warning" href="@Url.Action("Index","Category")"><i class="fa fa-reorder "></i> 分类管理</a>
+                                <a class="btn btn-success" href="@Url.Action("Index","AdminSetting")"><i class="fa fa-cogs"></i> 网站设置</a>
+                                <a class="btn btn-info" href="@Url.Action("Index","AdminSysUser")"><i class="fa fa-user"></i> 管理员设置</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                    
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.box -->
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary btn-block" id="btn_msg"><i class="fa fa-commenting"></i>&nbsp;&nbsp;如果有任何意见/建议/创意/问题/想法，请添加微信sky20100</button>
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+</div>
+
+
+
+@section BottomScripts {
+<script type="text/javascript" src="/plugins/bootbox.min.js"></script>
+<script type="text/javascript" src="/plugins/bootstrap-switch/js/bootstrap-switch.js"></script>
+
+
+}

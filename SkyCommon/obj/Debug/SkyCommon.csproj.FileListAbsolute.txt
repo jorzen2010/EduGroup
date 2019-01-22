@@ -1,0 +1,15 @@
+E:\2018\EduGroup\SkyCommon\bin\Debug\SkyCommon.dll
+E:\2018\EduGroup\SkyCommon\bin\Debug\SkyCommon.pdb
+E:\2018\EduGroup\SkyCommon\bin\Debug\ChnCharInfo.dll
+E:\2018\EduGroup\SkyCommon\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+E:\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.csprojResolveAssemblyReference.cache
+E:\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.dll
+E:\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.pdb
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Debug\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Debug\SkyCommon.pdb
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Debug\ChnCharInfo.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\MyPro\2018\EduGroup\SkyCommon\bin\Debug\ThoughtWorks.QRCode.dll
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.csprojResolveAssemblyReference.cache
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.dll
+D:\MyPro\2018\EduGroup\SkyCommon\obj\Debug\SkyCommon.pdb

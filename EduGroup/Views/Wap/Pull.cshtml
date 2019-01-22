@@ -1,0 +1,81 @@
+﻿@model StaticPagedList<SkyEntity.Jigou>
+@using PagedList;
+@using PagedList.Mvc;
+@using SkyService;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pull to refresh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="~/plugins/pullToRefresh/pullToRefresh.css" />
+    <script src="~/plugins/pullToRefresh/iscroll.js"></script>
+    <script src="~/plugins/pullToRefresh/pullToRefresh.js"></script>
+    <style type="text/css" media="all">
+        body, html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+  
+    <!--must content ul-->
+    <div id="wrapper">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@Html.DisplayFor(modelItem => item.Id) 、 @Html.DisplayFor(modelItem => item.JigouName)</li>
+            }
+     
+        </ul>
+       
+    </div>
+    @Html.AntiForgeryToken()
+    <script src="/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+        refresher.init({
+            id: "wrapper",
+            pullDownAction: Refresh,
+            pullUpAction: Refresh
+        });
+        var PageNum =  @ViewBag.pageno+1;
+        function Refresh() {    
+            setTimeout(function () {// <-- Simulate network congestion, remove setTimeout from production!
+                $.ajax({
+                    url: '/Wap/PullNext',
+                    type: 'post',
+                    timeout: 3000,
+                    data: {
+                        page: PageNum,
+                    },
+                    success: function (data) {
+                        var obj = eval("(" + data + ")");
+                            var el, li, i;
+                            el = document.querySelector("#wrapper ul");
+                            for (i = 0; i < obj.dataList.length; i++) {
+                                li = document.createElement('li');
+                                li.appendChild(document.createTextNode(obj.dataList[i].Id+'、'+obj.dataList[i].JigouName));
+                                el.insertBefore(li, el.childNodes[0]);
+                            }
+                            PageNum=PageNum+1;
+                            myScroll.refresh();/****remember to refresh when you action was completed！！！****/                   
+                    },
+                    error: function (e) {
+                        alert('出现意外错误，刷新失败！');
+                    }
+                });
+                myScroll.refresh();/****remember to refresh when you action was completed！！！****/
+            }, 1000);
+
+        }
+    </script>
+</body>
+</html>

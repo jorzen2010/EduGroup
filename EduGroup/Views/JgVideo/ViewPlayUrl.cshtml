@@ -1,0 +1,83 @@
+﻿@model SkyEntity.JgVideo
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.title = "视频地址";
+}
+@section Topcss {
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.0/skins/default/aliplayer-min.css" />
+
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            @ViewBag.title
+        </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">
+                         @ViewBag.title
+                         </h3>
+                      
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <h3 class="text-center">@Model.JgTitle<small>@ViewBag.playurl</small></h3>
+                       
+
+                            <div class="col-md-offset-2 col-md-9" >
+                               
+                                <div class="prism-player" id="J_prismPlayer" style="height: 500px;"></div>
+                               
+                            </div>
+
+                      
+
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+
+                        @ViewBag.strjson
+                        <p>
+                           标签： @Model.Tags <br/>
+                           上线时间： @Model.CreateTime
+                        </p>
+                    </div>
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+    <!-- /.content -->
+</div>
+
+
+@section BottomScripts {
+
+
+<script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.0/aliplayer-min.js"></script>
+    <script>
+    var player = new Aliplayer({
+        id: 'J_prismPlayer',
+        width: '100%',
+        autoplay: true,
+        //支持播放地址播放,此播放优先级最高
+        source: '@ViewBag.playurl',
+    },function(player){
+        console.log('播放器创建好了。')
+    });
+</script>
+
+
+
+}

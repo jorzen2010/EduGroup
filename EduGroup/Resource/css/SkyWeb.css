@@ -1,0 +1,144 @@
+﻿
+.dushubiji {
+    line-height:30px;
+    padding:10px 10px 10px 20px;
+    background-color:#fcfcfc;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+    .dushubiji h4 {
+        font-weight:600;
+        color:#333333;
+    }
+    .dushubiji .smalltitle span{
+        padding-right:20px;
+        color:#808080;
+
+    }
+
+    .dushubiji .footertitle span{
+        padding-right:5px;
+        color:#808080;
+        line-height:30px;
+        height:30px;
+
+    }
+.chuangshirenshuo {
+    padding-left:20px;
+    line-height:30px;
+}
+
+.dushuying {
+    margin-top:20px;
+}
+
+.uc-info {
+    height:50px;
+    line-height:30px
+}
+.uc-jieshao {
+    text-align:left;
+    line-height:30px;
+}
+.uc-menu {
+    margin-top:30px;
+   list-style-type:none;
+   margin-left:0;
+    padding-left:0;
+}
+    .uc-menu li {
+         line-height:60px;
+         height:60px;
+    }
+.dushuying-btn {
+    margin-top:25px;
+}
+.no-info {
+    margin-top:30px;
+    padding-top:50px;
+    font-size:24px;
+    color:#808080;
+    line-height:60px;
+}
+.webTitle {
+    margin:20px 0px;
+    font-weight:600;
+}
+.bijismalltitle {
+    margin:10px 0px;
+    color:#808080;
+    line-height:30px;
+}
+    .bijismalltitle span {
+        margin-right:20px;
+    }
+.reg_footer {
+    margin-top:40px;
+}
+
+.dushuhuibg {
+    background-color:#eeeeee;
+    cursor:pointer ;
+}
+.shudan {
+    padding:15px 15px;
+}
+.shudan-active {
+    background-color:#eeeeee;
+    box-shadow: 10px 10px 5px #dddddd;
+    cursor:pointer ;
+}
+.daka {
+    padding-right:20px;
+}
+
+.text-huise {
+    color:#bbbbbb;
+}
+
+
+
+
+.field-validation-error {
+    color:#ff0000;
+}
+
+.biji-comment {
+    margin-top:10px;
+    border-bottom:1px solid #dddddd;
+    padding-bottom:10px;
+}
+.biji-comment .comment-avatar {
+    float:left;
+}
+.comment-avatar img {
+    width:35px;
+    height:35px;
+}
+.biji-comment .comment-title {
+    padding-left: 20px;
+    float: left;
+    line-height: 22px;
+    height: 45px;
+}
+.biji-comment-content{
+display:inline-block;
+margin-top:10px;
+word-break:break-all;
+width:100%;
+
+}
+    .biji-comment-content p {
+        padding-top:8px;
+    }
+.huifu a{
+    text-decoration:none;
+    color:#bbbbbb;
+
+}
+.comment-zan a{
+    text-decoration:none;
+    color:#bbbbbb;
+
+}
+

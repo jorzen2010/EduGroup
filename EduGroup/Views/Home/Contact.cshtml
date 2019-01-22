@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@section Topcss {
+    <link href="~/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" />
+
+}
+
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+<div class="swiper-container" style="width:100%;height:20px;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="width:50px;height:20px;">Slide 1</div>
+        <div class="swiper-slide" style="width:50px;height:20px;">Slide 2</div>
+        <div class="swiper-slide" style="width:50px;height:20px;">Slide 3</div>
+    </div>
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+@section scripts {
+    <script type="text/javascript" src="~/plugins/swiper/js/swiper.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            slidesPerView: 2,
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+        })
+
+        //var mySwiper = new Swiper('.swiper-container', {
+        //    freeMode: true,
+        //})
+    </script>
+
+}
